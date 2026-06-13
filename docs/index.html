@@ -1,72 +1,72 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>效率工具集 - SmartImage Pro + TextBatch Pro</title>
+<title>Pro Tools Suite - Free Online Tools</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e0e0e0; min-height: 100vh; }
-.hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 20px; text-align: center; }
-.hero h1 { font-size: 42px; color: #fff; margin-bottom: 12px; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a1a; color: #e0e0e0; min-height: 100vh; }
+.hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 20px; text-align: center; }
+.hero h1 { font-size: 48px; color: #fff; margin-bottom: 12px; letter-spacing: -1px; }
 .hero p { font-size: 18px; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto; line-height: 1.6; }
-.container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
-.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 30px; }
-.card { background: #1a1a2e; border-radius: 16px; overflow: hidden; border: 1px solid #2a2a4a; transition: transform 0.3s; }
-.card:hover { transform: translateY(-4px); }
-.card-header { padding: 30px; text-align: center; }
-.card-header .icon { font-size: 48px; margin-bottom: 16px; }
-.card-header h2 { font-size: 24px; color: #fff; margin-bottom: 8px; }
-.card-header .price { font-size: 32px; color: #667eea; font-weight: 700; }
-.card-header .price span { font-size: 16px; color: #888; font-weight: 400; }
-.features { padding: 0 30px 20px; }
-.features li { list-style: none; padding: 8px 0; color: #b0b0c0; }
-.features li::before { content: '✓ '; color: #43e97b; font-weight: 700; }
-.card-footer { padding: 20px 30px; background: #12122a; text-align: center; }
-.btn { display: inline-block; padding: 12px 40px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; transition: transform 0.2s; }
-.btn-primary { background: #667eea; color: #fff; }
-.btn-primary:hover { transform: translateY(-2px); }
-.bundle { grid-column: 1 / -1; background: linear-gradient(135deg, #1a1a2e 0%, #2a1a3e 100%); border: 2px solid #667eea; }
-.bundle .card-header .price { color: #ff6b6b; }
-.bundle-tag { display: inline-block; background: #ff6b6b; color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
-.how-to { margin-top: 60px; background: #1a1a2e; border-radius: 16px; padding: 40px; border: 1px solid #2a2a4a; }
-.how-to h3 { font-size: 22px; margin-bottom: 20px; color: #fff; }
-.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-.step { text-align: center; }
-.step-num { width: 36px; height: 36px; background: #667eea; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; margin-bottom: 12px; }
-.step h4 { color: #fff; margin-bottom: 8px; }
-.step p { color: #888; font-size: 14px; }
-.contact { margin-top: 40px; text-align: center; padding: 40px; background: #1a1a2e; border-radius: 16px; border: 1px solid #2a2a4a; }
-.contact h3 { color: #fff; margin-bottom: 12px; }
-.contact p { color: #888; }
-footer { text-align: center; padding: 30px; color: #555; font-size: 13px; }
+.hero .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 4px 16px; border-radius: 20px; font-size: 13px; color: #fff; margin-bottom: 20px; }
+.container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+.tools { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+.card { background: #14142a; border-radius: 16px; overflow: hidden; border: 1px solid #2a2a4a; transition: all 0.3s; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(102,126,234,0.15); }
+.card-header { padding: 28px; text-align: center; background: linear-gradient(180deg, rgba(102,126,234,0.1) 0%, transparent 100%); }
+.card-header .icon { font-size: 40px; margin-bottom: 12px; }
+.card-header h2 { font-size: 22px; color: #fff; }
+.card-body { padding: 0 28px 20px; }
+.card-body ul { list-style: none; }
+.card-body ul li { padding: 6px 0; color: #999; font-size: 14px; }
+.card-body ul li::before { content: '✓ '; color: #43e97b; font-weight: 700; }
+.card-footer { padding: 20px 28px; text-align: center; border-top: 1px solid #2a2a4a; display: flex; flex-direction: column; gap: 8px; }
+.card-footer .link-group { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 10px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+.btn-live { background: #43e97b; color: #0a0a1a; }
+.btn-live:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(67,233,123,0.3); }
+.btn-gh { background: #2a2a4a; color: #e0e0e0; }
+.btn-gh:hover { background: #3a3a5a; }
+
+.support-section { margin-top: 60px; background: #14142a; border-radius: 16px; padding: 40px; border: 1px solid #2a2a4a; text-align: center; }
+.support-section h3 { font-size: 22px; color: #fff; margin-bottom: 16px; }
+.support-section p { color: #999; margin-bottom: 8px; }
+.support-section .paypal { font-size: 24px; color: #667eea; font-weight: 700; }
+.support-section .crypto { font-size: 14px; color: #999; word-break: break-all; background: #0a0a1a; padding: 12px; border-radius: 8px; margin: 12px auto; max-width: 500px; }
+.support-section .crypto span { color: #43e97b; }
+footer { text-align: center; padding: 30px; color: #444; font-size: 13px; }
 </style>
 </head>
 <body>
 <div class="hero">
-  <h1>🚀 效率工具集</h1>
-  <p>两杯奶茶钱，每天省下2小时重复劳动。本地运行，隐私安全，一键启动。</p>
+  <div class="badge">🆓 Free · Private · Local-first</div>
+  <h1>🛠️ Pro Tools Suite</h1>
+  <p>Free online utility tools for developers, designers, and office workers. No signup, no data upload, privacy guaranteed.</p>
 </div>
 
 <div class="container">
-  <div class="products">
+  <div class="tools">
     <div class="card">
       <div class="card-header">
         <div class="icon">🖼️</div>
         <h2>SmartImage Pro</h2>
-        <p style="color:#888;margin-bottom:16px;">智能图片批量处理</p>
-        <div class="price">¥19.9 <span>单次购买</span></div>
       </div>
-      <div class="features">
-        <li>批量压缩图片（减小80%）</li>
-        <li>批量调整尺寸</li>
-        <li>格式转换 JPG/PNG/WebP</li>
-        <li>灰度处理</li>
-        <li>拖拽操作，无需PS基础</li>
-        <li>本地运行，隐私安全</li>
+      <div class="card-body">
+        <ul>
+          <li>Batch compress images (up to 80%)</li>
+          <li>Batch resize to any dimension</li>
+          <li>Format conversion JPG/PNG/WebP</li>
+          <li>Grayscale conversion</li>
+          <li>Process 50+ images at once</li>
+        </ul>
       </div>
       <div class="card-footer">
-        <span style="color:#888">联系购买 →</span>
+        <div class="link-group">
+          <a href="https://spotty-berries-lie.loca.lt" class="btn btn-live" target="_blank">▶ Live Demo</a>
+          <a href="https://github.com/luczhan-open/SmartImage-Pro" class="btn btn-gh" target="_blank">GitHub</a>
+        </div>
       </div>
     </div>
 
@@ -74,78 +74,60 @@ footer { text-align: center; padding: 30px; color: #555; font-size: 13px; }
       <div class="card-header">
         <div class="icon">📝</div>
         <h2>TextBatch Pro</h2>
-        <p style="color:#888;margin-bottom:16px;">智能文本批量处理</p>
-        <div class="price">¥14.9 <span>单次购买</span></div>
       </div>
-      <div class="features">
-        <li>批量查找替换</li>
-        <li>清理空行空格</li>
-        <li>行去重</li>
-        <li>文本统计（字数/行数/字符）</li>
-        <li>提取链接和邮箱</li>
-        <li>支持 TXT/CSV/JSON/MD/代码</li>
+      <div class="card-body">
+        <ul>
+          <li>Batch find and replace</li>
+          <li>Remove empty lines & trim</li>
+          <li>Line deduplication</li>
+          <li>Text statistics (words/chars/lines)</li>
+          <li>Extract URLs and emails</li>
+        </ul>
       </div>
       <div class="card-footer">
-        <span style="color:#888">联系购买 →</span>
+        <div class="link-group">
+          <a href="https://hot-falcons-drive.loca.lt" class="btn btn-live" target="_blank">▶ Live Demo</a>
+          <a href="https://github.com/luczhan-open/TextBatch-Pro" class="btn btn-gh" target="_blank">GitHub</a>
+        </div>
       </div>
     </div>
 
-    <div class="card bundle">
+    <div class="card">
       <div class="card-header">
-        <div class="bundle-tag">🏆 最受欢迎</div>
-        <div class="icon">🎁</div>
-        <h2>办公效率套装</h2>
-        <p style="color:#888;margin-bottom:16px;">图片工具 + 文本工具</p>
-        <div class="price">¥29.9 <span>（省¥4.9）</span></div>
+        <div class="icon">📁</div>
+        <h2>FileBatch Pro</h2>
       </div>
-      <div class="features">
-        <li>包含 SmartImage Pro + TextBatch Pro</li>
-        <li>覆盖图片和文本两大高频需求</li>
-        <li>永久使用，免费升级</li>
-        <li>售后指导</li>
+      <div class="card-body">
+        <ul>
+          <li>Batch rename files</li>
+          <li>Find & replace in filenames</li>
+          <li>Add prefix/suffix to files</li>
+          <li>Counter-based renaming</li>
+          <li>Upload & manage files</li>
+        </ul>
       </div>
       <div class="card-footer">
-        <span style="color: #ff6b6b; font-weight: 600;">性价比之选 → 联系购买</span>
+        <div class="link-group">
+          <a href="https://clever-hands-clap.loca.lt" class="btn btn-live" target="_blank">▶ Live Demo</a>
+          <a href="https://github.com/luczhan-open/FileBatch-Pro" class="btn btn-gh" target="_blank">GitHub</a>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="how-to">
-    <h3>📖 使用说明</h3>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h4>下载解压</h4>
-        <p>收到文件后解压到任意文件夹</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h4>双击启动</h4>
-        <p>双击 start.bat 启动服务</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h4>打开浏览器</h4>
-        <p>访问 http://localhost:3000</p>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <h4>开始使用</h4>
-        <p>拖拽文件，一键处理</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact">
-    <h3>📱 联系购买</h3>
-    <p>闲鱼搜索：<strong>SmartImage Pro</strong> 或 <strong>办公效率套装</strong></p>
-    <p style="margin-top:8px;color:#667eea;">或私信咨询，24小时内回复</p>
+  <div class="support-section">
+    <h3>💙 Support Development</h3>
+    <p>These tools are free to use. If they've saved you time, consider a donation:</p>
+    <p class="paypal">PayPal: bangbangfxxk@outlook.com</p>
+    <p style="margin-top:16px;">or send crypto:</p>
+    <div class="crypto">ETH / USDT (ERC20): <span>0xdb61885f18b116f99e7994a684a7f8538ec99181</span></div>
+    <p style="margin-top:16px;color:#666;font-size:13px;">Suggested: $5 · Every donation goes toward maintaining and improving these tools</p>
   </div>
 </div>
 
 <footer>
-  <p>所有工具本地运行，不上传任何数据到云端。隐私安全有保障。</p>
-  <p style="margin-top:4px;">© 2026 效率工具集</p>
+  <p>All tools run locally · No data is uploaded or stored on any server · Open source (MIT)</p>
+  <p style="margin-top:4px;">© 2026 Pro Tools Suite · Built with ❤️</p>
 </footer>
 </body>
 </html>
