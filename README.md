@@ -24,3 +24,7 @@ Windows 用户双击 `start.bat` 即可。
 - Node.js + Express
 - Sharp (图片处理)
 - 纯前端 HTML/CSS/JS
+
+## Sponsor
+
+If you find this tool useful, consider sponsoring via [GitHub Sponsors](https://github.com/sponsors/luczhan-open) or [PayPal](https://paypal.me/bangbangfxxk).
