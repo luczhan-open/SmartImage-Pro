@@ -1,0 +1,17 @@
+{
+  "name": "smartimage-pro",
+  "version": "1.0.0",
+  "description": "智能图片批量处理工具 - 压缩/缩放/格式转换/灰度处理",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["图片处理", "批量处理", "image", "batch"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "multer": "^2.1.1",
+    "sharp": "^0.35.1"
+  }
+}
