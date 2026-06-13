@@ -1,133 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pro Tools Suite - Free Online Tools</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pro Tools Suite - Free Batch Processing Tools</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a1a; color: #e0e0e0; min-height: 100vh; }
-.hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 20px; text-align: center; }
-.hero h1 { font-size: 48px; color: #fff; margin-bottom: 12px; letter-spacing: -1px; }
-.hero p { font-size: 18px; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto; line-height: 1.6; }
-.hero .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 4px 16px; border-radius: 20px; font-size: 13px; color: #fff; margin-bottom: 20px; }
-.container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
-.tools { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
-.card { background: #14142a; border-radius: 16px; overflow: hidden; border: 1px solid #2a2a4a; transition: all 0.3s; }
-.card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(102,126,234,0.15); }
-.card-header { padding: 28px; text-align: center; background: linear-gradient(180deg, rgba(102,126,234,0.1) 0%, transparent 100%); }
-.card-header .icon { font-size: 40px; margin-bottom: 12px; }
-.card-header h2 { font-size: 22px; color: #fff; }
-.card-body { padding: 0 28px 20px; }
-.card-body ul { list-style: none; }
-.card-body ul li { padding: 6px 0; color: #999; font-size: 14px; }
-.card-body ul li::before { content: '✓ '; color: #43e97b; font-weight: 700; }
-.card-footer { padding: 20px 28px; text-align: center; border-top: 1px solid #2a2a4a; display: flex; flex-direction: column; gap: 8px; }
-.card-footer .link-group { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
-.btn { display: inline-block; padding: 10px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
-.btn-live { background: #43e97b; color: #0a0a1a; }
-.btn-live:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(67,233,123,0.3); }
-.btn-gh { background: #2a2a4a; color: #e0e0e0; }
-.btn-gh:hover { background: #3a3a5a; }
-
-.support-section { margin-top: 60px; background: #14142a; border-radius: 16px; padding: 40px; border: 1px solid #2a2a4a; text-align: center; }
-.support-section h3 { font-size: 22px; color: #fff; margin-bottom: 16px; }
-.support-section p { color: #999; margin-bottom: 8px; }
-.support-section .paypal { font-size: 24px; color: #667eea; font-weight: 700; }
-.support-section .crypto { font-size: 14px; color: #999; word-break: break-all; background: #0a0a1a; padding: 12px; border-radius: 8px; margin: 12px auto; max-width: 500px; }
-.support-section .crypto span { color: #43e97b; }
-footer { text-align: center; padding: 30px; color: #444; font-size: 13px; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a1a;color:#e0e0e0}
+.hero{background:linear-gradient(135deg,#667eea,#764ba2);padding:60px 20px;text-align:center}
+.hero h1{font-size:42px;color:#fff}
+.hero p{color:rgba(255,255,255,0.8);max-width:600px;margin:10px auto;line-height:1.6}
+.container{max-width:1000px;margin:0 auto;padding:30px 20px}
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:#14142a;border-radius:14px;border:1px solid #2a2a4a;padding:24px}
+.card h2{color:#fff;margin-bottom:12px}
+.card ul{list-style:none}
+.card ul li{padding:4px 0;color:#999;font-size:14px}
+.card ul li::before{content:'✓ ';color:#43e97b}
+.card a{display:inline-block;margin-top:12px;padding:8px 20px;background:#667eea;color:#fff;border-radius:6px;text-decoration:none;font-size:14px}
+.support{background:#14142a;border-radius:14px;padding:30px;text-align:center;margin-top:30px;border:1px solid #2a2a4a}
+.support h3{color:#fff;margin-bottom:12px}
+.support .pay{color:#667eea;font-size:20px;font-weight:700}
+.support .eth{color:#999;font-size:13px;word-break:break-all}
+footer{text-align:center;padding:30px;color:#444;font-size:13px}
 </style>
 </head>
 <body>
 <div class="hero">
-  <div class="badge">🆓 Free · Private · Local-first</div>
   <h1>🛠️ Pro Tools Suite</h1>
-  <p>Free online utility tools for developers, designers, and office workers. No signup, no data upload, privacy guaranteed.</p>
+  <p>Free, open-source batch processing tools. Run locally — no data leaves your computer.</p>
 </div>
-
 <div class="container">
   <div class="tools">
     <div class="card">
-      <div class="card-header">
-        <div class="icon">🖼️</div>
-        <h2>SmartImage Pro</h2>
-      </div>
-      <div class="card-body">
-        <ul>
-          <li>Batch compress images (up to 80%)</li>
-          <li>Batch resize to any dimension</li>
-          <li>Format conversion JPG/PNG/WebP</li>
-          <li>Grayscale conversion</li>
-          <li>Process 50+ images at once</li>
-        </ul>
-      </div>
-      <div class="card-footer">
-        <div class="link-group">
-          <a href="https://spotty-berries-lie.loca.lt" class="btn btn-live" target="_blank">▶ Live Demo</a>
-          <a href="https://github.com/luczhan-open/SmartImage-Pro" class="btn btn-gh" target="_blank">GitHub</a>
-        </div>
-      </div>
+      <h2>🖼️ SmartImage Pro</h2>
+      <ul>
+        <li>Batch compress images (up to 80%)</li>
+        <li>Batch resize to any dimension</li>
+        <li>Format conversion JPG/PNG/WebP</li>
+        <li>Grayscale conversion</li>
+        <li>Process 50+ images at once</li>
+      </ul>
+      <a href="https://github.com/luczhan-open/SmartImage-Pro">View on GitHub →</a>
     </div>
-
     <div class="card">
-      <div class="card-header">
-        <div class="icon">📝</div>
-        <h2>TextBatch Pro</h2>
-      </div>
-      <div class="card-body">
-        <ul>
-          <li>Batch find and replace</li>
-          <li>Remove empty lines & trim</li>
-          <li>Line deduplication</li>
-          <li>Text statistics (words/chars/lines)</li>
-          <li>Extract URLs and emails</li>
-        </ul>
-      </div>
-      <div class="card-footer">
-        <div class="link-group">
-          <a href="https://hot-falcons-drive.loca.lt" class="btn btn-live" target="_blank">▶ Live Demo</a>
-          <a href="https://github.com/luczhan-open/TextBatch-Pro" class="btn btn-gh" target="_blank">GitHub</a>
-        </div>
-      </div>
+      <h2>📝 TextBatch Pro</h2>
+      <ul>
+        <li>Batch find and replace across files</li>
+        <li>Remove empty lines and trim</li>
+        <li>Line deduplication</li>
+        <li>Text statistics (words/chars/lines)</li>
+        <li>Extract URLs and emails</li>
+      </ul>
+      <a href="https://github.com/luczhan-open/TextBatch-Pro">View on GitHub →</a>
     </div>
-
     <div class="card">
-      <div class="card-header">
-        <div class="icon">📁</div>
-        <h2>FileBatch Pro</h2>
-      </div>
-      <div class="card-body">
-        <ul>
-          <li>Batch rename files</li>
-          <li>Find & replace in filenames</li>
-          <li>Add prefix/suffix to files</li>
-          <li>Counter-based renaming</li>
-          <li>Upload & manage files</li>
-        </ul>
-      </div>
-      <div class="card-footer">
-        <div class="link-group">
-          <a href="https://clever-hands-clap.loca.lt" class="btn btn-live" target="_blank">▶ Live Demo</a>
-          <a href="https://github.com/luczhan-open/FileBatch-Pro" class="btn btn-gh" target="_blank">GitHub</a>
-        </div>
-      </div>
+      <h2>📁 FileBatch Pro</h2>
+      <ul>
+        <li>Batch file renaming</li>
+        <li>Find & replace in filenames</li>
+        <li>Add prefix/suffix</li>
+        <li>Counter-based naming</li>
+        <li>File upload & management</li>
+      </ul>
+      <a href="https://github.com/luczhan-open/FileBatch-Pro">View on GitHub →</a>
     </div>
   </div>
-
-  <div class="support-section">
+  <div class="support">
     <h3>💙 Support Development</h3>
-    <p>These tools are free to use. If they've saved you time, consider a donation:</p>
-    <p class="paypal">PayPal: bangbangfxxk@outlook.com</p>
-    <p style="margin-top:16px;">or send crypto:</p>
-    <div class="crypto">ETH / USDT (ERC20): <span>0xdb61885f18b116f99e7994a684a7f8538ec99181</span></div>
-    <p style="margin-top:16px;color:#666;font-size:13px;">Suggested: $5 · Every donation goes toward maintaining and improving these tools</p>
+    <p>Tools are free. If they saved you time, consider donating:</p>
+    <p class="pay">PayPal: bangbangfxxk@outlook.com</p>
+    <p class="eth">ETH/USDT (ERC20): 0xdb61885f18b116f99e7994a684a7f8538ec99181</p>
+    <p style="color:#666;font-size:13px;margin-top:8px;">Suggested: $5 · One-time · Goes toward maintaining these tools</p>
   </div>
 </div>
-
-<footer>
-  <p>All tools run locally · No data is uploaded or stored on any server · Open source (MIT)</p>
-  <p style="margin-top:4px;">© 2026 Pro Tools Suite · Built with ❤️</p>
-</footer>
+<footer>© 2026 Pro Tools Suite · Open Source (MIT)</footer>
 </body>
 </html>
