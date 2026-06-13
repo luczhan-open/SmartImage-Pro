@@ -25,6 +25,14 @@ Windows 用户双击 `start.bat` 即可。
 - Sharp (图片处理)
 - 纯前端 HTML/CSS/JS
 
+## Try Online
+
+A live instance is running at:
+**https://eight-spoons-worry.loca.lt**
+
 ## Sponsor
 
-If you find this tool useful, consider sponsoring via [GitHub Sponsors](https://github.com/sponsors/luczhan-open) or [PayPal](https://paypal.me/bangbangfxxk).
+If this tool helped you, please consider supporting development:
+
+**PayPal**: bangbangfxxk@outlook.com (send $5 suggested)
+**GitHub**: https://github.com/luczhan-open/SmartImage-Pro (⭐ star & sponsor)
